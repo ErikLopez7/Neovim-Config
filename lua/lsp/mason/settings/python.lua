@@ -46,7 +46,7 @@ lspconfig.pyright.setup{
     },
 }
 
-lspconfig.ruff_lsp.setup{
-	cmd = {"ruff-lsp"},
-	root_dir = python_root_pattern,
-}
+-- lspconfig.ruff_lsp.setup{
+-- 	cmd = {"ruff-lsp"},
+-- 	root_dir = python_root_pattern,
+-- }

@@ -1,15 +1,13 @@
 require("mason").setup()
 
-require("mason-lspconfig").setup() {
+require("mason-lspconfig").setup({
 	PATH = "prepend",
 	ensure_installed = {
-		"clangd",
-		"pyright",
-		"ruff_lsp",
+		"pyright"
 	},
 
-}
+})
 
 require("lsp/mason/settings/python")
-require("lsp/mason/settings/clangd")
-require("lsp/mason/settings/typst")
+-- require("lsp/mason/settings/clangd")
+-- require("lsp/mason/settings/typst")
