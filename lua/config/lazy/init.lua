@@ -26,6 +26,23 @@ require("lazy").setup({
       }
     },
 
+  -- +------------+
+  -- | treesitter |
+  -- +------------+
+  {
+      'nvim-treesitter/nvim-treesitter',
+      build = ':TSUpdate',
+  },
+
+  'nvim-treesitter/playground',
+  'p00f/nvim-ts-rainbow',
+
+  {
+	 "williamboman/mason.nvim",
+ 	 "williamboman/mason-lspconfig.nvim",
+  	 "neovim/nvim-lspconfig",
+  },
+	
     {
 	  "folke/which-key.nvim",
 	  event = "VeryLazy",
@@ -34,15 +51,11 @@ require("lazy").setup({
 	    vim.o.timeoutlen = 300
 	  end,
 	  opts = {
-	    -- your configuration comes here
+	    -- your configuration comes here
 	    -- or leave it empty to use the default settings
 	    -- refer to the configuration section below
 	}
    },
-	{
-    	 "williamboman/mason.nvim",
-   	 "williamboman/mason-lspconfig.nvim",
-   	 "neovim/nvim-lspconfig",
-	},
+
 })
 
